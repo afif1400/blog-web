@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import RightSideBar from '../components/Sidebar/RightSideBar';
+// import Blog from '../components/Blog/Blog';
 import '../styles/home.css';
 
 const HomePage = () => {
@@ -9,18 +10,17 @@ const HomePage = () => {
       <Hero />
       <div className='blog'>
         <div className='blog_card'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          illo odio unde veniam voluptates? Cum error modi sint. Ab aspernatur
-          cum cumque dolorem enim exercitationem, hic illum molestiae nihil nisi
-          officia quia quibusdam, quidem tempora tempore temporibus voluptatem!
-          Doloribus fugit ipsum quos voluptate voluptatibus. Accusamus aliquid
-          aperiam consequatur cum dignissimos dolore dolorum et exercitationem
-          explicabo, fugit incidunt inventore libero magnam minima neque nobis,
-          officia provident quaerat qui ratione reiciendis rem sint sit
-          temporibus, veniam? At explicabo laboriosam magni molestias nam
-          pariatur possimus sapiente soluta, vel voluptate? Autem commodi
-          doloremque, eligendi, et eum facilis inventore itaque mollitia, natus
-          neque rem totam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          consequuntur earum iure quisquam quasi, ex in quod adipisci voluptates
+          ullam deserunt, obcaecati beatae nostrum sapiente minima sequi, vel
+          amet! Ipsa maiores veniam commodi aliquid architecto impedit ducimus
+          vero animi iure quia dolores, illo qui eligendi praesentium, soluta
+          accusantium deleniti consectetur at iusto nihil. Quisquam quia
+          provident, totam consequuntur dolorem, adipisci id architecto non
+          tempora dolore repellat distinctio sunt debitis, perspiciatis
+          obcaecati molestiae expedita consequatur nam nulla. Commodi ducimus
+          cum pariatur ex voluptatum modi iure nisi quaerat, alias tempora
+          porro, incidunt quos. Ducimus nihil itaque quas id atque nam hic qui?
         </div>
         <RightSideBar />
       </div>

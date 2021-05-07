@@ -1,5 +1,6 @@
 .blog_card {
   padding: 20px;
+  color: #203656;
 }
 
 .right_side_bar {
@@ -25,7 +26,7 @@
 @media (min-width: 700px) {
   .blog {
     display: grid;
-    grid-template-columns: 3.2fr 0.8fr;
+    grid-template-columns: 3.1fr 0.9fr;
   }
 }
 
@@ -44,4 +45,9 @@
 svg {
   width: 60px;
   enable-background: new 0 0 456.7 39.9;
+}
+
+.popular_post.tags .MuiChip-root {
+  max-width: 150px;
+  margin: 0 12px 12px 0;
 }

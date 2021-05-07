@@ -25,7 +25,7 @@ const Newsletter = () => {
   return (
     <div className='newsletter'>
       <h5 className='title'>Join 70,000 subscribers!</h5>
-      <input type='email' />
+      <input type='email' placeholder='Email address...' />
       <Button variant='contained' className={classes.button}>
         Sign Up
       </Button>

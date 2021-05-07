@@ -3,9 +3,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .recent_post div .card {
+  width: 100% !important;
   border: none;
 }
 

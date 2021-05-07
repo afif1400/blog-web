@@ -4,9 +4,11 @@ import Explore from './Explore';
 import Newsletter from './Newsletter';
 import Underline from '../../assets/images/components/underline';
 import RecentPost from './RecentPost';
+import { Chip } from '@material-ui/core';
 import '../../styles/recentpost.css';
 
 const RightSideBar = () => {
+  const tags = [1, 2, 3, 4, 5];
   return (
     <div className='right_side_bar'>
       <div className='popular_post'>
@@ -30,6 +32,13 @@ const RightSideBar = () => {
         <h5 className='title'>Recent Post</h5>
         <Underline />
         <RecentPost />
+      </div>
+      <div className='popular_post tags'>
+        <h5 className='title'>Tag Clouds</h5>
+        <Underline />
+        {tags.map(() => (
+          <Chip label='# Custom' variant='outlined' />
+        ))}
       </div>
     </div>
   );
