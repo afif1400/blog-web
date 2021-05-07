@@ -1,5 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import RightSideBar from '../components/Sidebar/RightSideBar';
+// import Blog from '../components/Blog/Blog';
 import '../styles/home.css';
 import PopularPost from '../components/Sidebar/PopularPost';
 import Explore from '../components/Sidebar/Explore';
@@ -34,6 +36,7 @@ const HomePage = () => {
             <Newsletter />
           </div>
         </div>
+        <RightSideBar />
       </div>
     </div>
   );

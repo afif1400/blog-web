@@ -1,0 +1,32 @@
+.recent_post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.recent_post div .card {
+  width: 100% !important;
+  border: none;
+}
+
+.recent_post div .card .card-img-top {
+  height: 200px;
+  border: none;
+  border-radius: 12px;
+}
+
+.recent_post div .card .card-body {
+  padding: 1.25rem 1.25rem 1.25rem 0rem;
+}
+
+.recent_post div .card .card-body .card-title {
+  color: #203656;
+  font-size: 1.1rem;
+}
+
+.recent_post div .card .card-body .card-text {
+  font-size: 0.8rem;
+  color: #a8b3c3;
+}
