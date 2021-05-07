@@ -37,13 +37,13 @@
 }
 
 .carousel-control-prev-icon {
-  background-image: url('../assets/images/dry-clean.svg') !important;
+  background-image: url('../assets/images/svgs/dry-clean.svg') !important;
   width: 40px !important;
   height: 40px !important;
 }
 
 .carousel-control-next-icon {
-  background-image: url('../assets/images/dry-clean.svg') !important;
+  background-image: url('../assets/images/svgs/dry-clean.svg') !important;
   width: 40px !important;
   height: 40px !important;
 }
@@ -68,4 +68,20 @@
   .carousel-caption h3 {
     max-width: 80%;
   }
+}
+
+.underline {
+  text-align: center;
+}
+
+.st69 {
+  fill: none;
+  stroke: #ff7b7c;
+  stroke-width: 8;
+  stroke-miterlimit: 6;
+}
+
+svg {
+  width: 60px;
+  enable-background: new 0 0 456.7 39.9;
 }

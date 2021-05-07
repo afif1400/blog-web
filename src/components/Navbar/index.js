@@ -22,7 +22,7 @@ export const NavLink = styled(Link)`
   border-radius: 100px;
   // transition: all 0.4s ease-in-out;
   margin: 1rem;
-  height: 30px;
+  height: 40px;
   justify-content: center;
   cursor: pointer;
 
