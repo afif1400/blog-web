@@ -69,19 +69,3 @@
     max-width: 80%;
   }
 }
-
-.underline {
-  text-align: center;
-}
-
-.st69 {
-  fill: none;
-  stroke: #ff7b7c;
-  stroke-width: 8;
-  stroke-miterlimit: 6;
-}
-
-svg {
-  width: 60px;
-  enable-background: new 0 0 456.7 39.9;
-}

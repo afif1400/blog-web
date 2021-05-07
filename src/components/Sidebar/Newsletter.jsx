@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: '10px',
     padding: '12px 0',
-    width: '340px',
+    width: '100%',
     borderRadius: '25px',
     color: '#fff',
     background: 'linear-gradient(270deg, #FFA387 0%, #FE4F70 100%)',
