@@ -1,6 +1,6 @@
 import React from 'react';
-import {Navbar, Nav, Button} from 'react-bootstrap';
-import {NavLink as Link} from 'react-router-dom';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import './navbar.css';
 
@@ -29,13 +29,14 @@ export const NavLink = styled(Link)`
   &.active {
     color: #fff;
     background: linear-gradient(to right, #fe4f70, #ffa387);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.202191);
   }
 
   &:hover {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(to right, #fe4f70, #ffa387);
-    transition: 0.6s;
+    transition: 0.2s;
   }
 `;
 
@@ -48,23 +49,23 @@ const NavBar = () => {
         bg='light'
         variant='light'
         // sticky='top'
-        style={{minHeight: '8vh'}}
+        style={{ minHeight: '8vh' }}
       >
         <Navbar.Brand>Navbar</Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
-            <NavLink to='/' style={{textDecoration: 'none'}} activeStyle>
+            <NavLink to='/' style={{ textDecoration: 'none' }} activeStyle>
               Home
             </NavLink>
             <NavLink
               to='/category'
-              style={{textDecoration: 'none'}}
+              style={{ textDecoration: 'none' }}
               activeStyle
             >
               category
             </NavLink>
-            <NavLink to='/about' style={{textDecoration: 'none'}} activeStyle>
+            <NavLink to='/about' style={{ textDecoration: 'none' }} activeStyle>
               about
             </NavLink>
           </Nav>
