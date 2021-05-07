@@ -5,6 +5,7 @@ import PopularPost from '../components/Sidebar/PopularPost';
 import Explore from '../components/Sidebar/Explore';
 import Newsletter from '../components/Sidebar/Newsletter';
 import Underline from '../assets/images/components/underline';
+import BlogCard from '../components/Blog/Blogcard';
 
 const HomePage = () => {
   return (
@@ -12,18 +13,7 @@ const HomePage = () => {
       <Hero />
       <div className='blog'>
         <div className='blog_card'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          illo odio unde veniam voluptates? Cum error modi sint. Ab aspernatur
-          cum cumque dolorem enim exercitationem, hic illum molestiae nihil nisi
-          officia quia quibusdam, quidem tempora tempore temporibus voluptatem!
-          Doloribus fugit ipsum quos voluptate voluptatibus. Accusamus aliquid
-          aperiam consequatur cum dignissimos dolore dolorum et exercitationem
-          explicabo, fugit incidunt inventore libero magnam minima neque nobis,
-          officia provident quaerat qui ratione reiciendis rem sint sit
-          temporibus, veniam? At explicabo laboriosam magni molestias nam
-          pariatur possimus sapiente soluta, vel voluptate? Autem commodi
-          doloremque, eligendi, et eum facilis inventore itaque mollitia, natus
-          neque rem totam?
+          <BlogCard />
         </div>
         <div className='right_side_bar'>
           <div className='popular_post'>

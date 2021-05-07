@@ -10,20 +10,13 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import '../../styles/blogcard.css'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
@@ -33,10 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   expandOpen: {
     transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
+  }
 }));
 
 export default function BlogCard() {
@@ -48,10 +38,15 @@ export default function BlogCard() {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className='root'>
+      <CardMedia
+        className='media'
+        image='https://images.unsplash.com/photo-1520218750893-2be45c7cbf63?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        title='Docker container commands'
+      />
       <CardHeader
         avatar={
-          <Avatar aria-label='recipe' className={classes.avatar}>
+          <Avatar aria-label='recipe' className='avatar'>
             R
           </Avatar>
         }
@@ -60,16 +55,27 @@ export default function BlogCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title='Docker container commands'
-        subheader='September 14, 2016'
+        title={
+          <div className='title'>
+            <Typography color='textSecondary'>
+                Afif
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="5" fill="#990000"/>
+              </svg>
+              31 March 2019
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="5" fill="#990000"/>
+              </svg>
+            </Typography>
+          </div>
+        }
+        className='header1'
       />
-      <CardMedia
-        className={classes.media}
-        image='/static/images/cards/paella.jpg'
-        title='Docker container commands'
-      />
+      <CardHeader title={
+        <h3>Docker Container Commands</h3>
+      } className='header2'/>
       <CardContent>
-        <Typography variant='body2' color='textSecondary' component='p'>
+        <Typography variant='body2' color='textSecondary'  component='p'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
           impedit repellat distinctio, consequatur veniam rerum recusandae
           deleniti earum ullam laborum aspernatur enim cum ratione nihil!
