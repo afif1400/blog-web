@@ -1,0 +1,33 @@
+.popular_post_container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+
+.popular_post_container .imgBx {
+    margin-right: 10px;
+}
+
+.popular_post_container .imgBx img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.popular_post_title {
+    border-bottom: 1px solid #eee;
+}
+
+.popular_post_title h5 {
+    padding-top: 5px;
+    color: #203656;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.popular_post_title p {
+    color: #A8B3C3;
+    font-size: 1rem;
+}

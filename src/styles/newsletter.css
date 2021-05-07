@@ -1,0 +1,22 @@
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.newsletter .title{
+    font-weight:600;
+    font-size:1rem;
+    margin:30px 0;
+}
+
+.newsletter input{
+   max-width: 80%;
+    margin:10px 0;
+    padding: 10px 10px;
+    border:1px solid #ccc;
+    border-radius:25px;
+    outline: none;
+
+}

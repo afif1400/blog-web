@@ -1,0 +1,29 @@
+.blog_card{
+    padding:10px
+}
+
+.right_side_bar{
+    padding:10px;
+}
+
+.popular_post{
+    border:1px solid rgba(215, 214, 214, 0.97);
+    padding-top:10px;
+    margin: 30px 0;
+    border-radius:12px;
+}
+
+.popular_post .title{
+    margin-bottom:15px;
+    color:#203656;
+    font-weight:400;
+    text-transform:capitalize;
+    text-align:center
+}
+
+@media (min-width:700px){
+    .blog{
+        display:grid;
+        grid-template-columns:2fr 1fr
+    }
+}
