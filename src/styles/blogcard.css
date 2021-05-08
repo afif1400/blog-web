@@ -1,54 +1,54 @@
-.blogcard{
-  padding:10px 10px 10px 0;
+.blogcard {
+	padding: 10px 10px 10px 0;
 }
 
-.blogcard .card{
-    border-radius:12px;
+.blogcard .card {
+	border-radius: 12px;
 }
 
-.blogcard .card .card-header{
-  font-size: 15px;
-  color: #8F9BAD;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color:#fff;
-  border:none;
-  padding: 30px 30px 10px 30px;
+.blogcard .card .card-header {
+	font-size: 15px;
+	color: #8f9bad;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #fff;
+	border: none;
+	padding: 30px 30px 10px 30px;
 }
 
 .blogcard .card .card-img-top {
-  border-radius:12px 12px 0  0;
-  height: 500px;
+	border-radius: 12px 12px 0 0;
+	height: 500px;
 }
 
-.blogcard .card .card-body .card-title{
-  color: #203656;
-  font-size: 1.8rem;
-  font-weight:normal
+.blogcard .card .card-body .card-title {
+	color: #203656;
+	font-size: 1.8rem;
+	font-weight: normal;
 }
 
-.blogcard .card .card-body .card-text{
-   color:#8F9BAD;
+.blogcard .card .card-body .card-text {
+	color: #8f9bad;
 }
 
-.blogcard .card .card-footer{
-  background-color:#fff;
-  border:none;
-  border-radius:12px;
-  padding-top:30px;
-  padding-left:30px
+.blogcard .card .card-footer {
+	background-color: #fff;
+	border: none;
+	border-radius: 12px;
+	padding-top: 30px;
+	padding-left: 30px;
 }
 
-.blogcard .card .card-body{
-  padding: 10px 30px 10px 30px;
+.blogcard .card .card-body {
+	padding: 10px 30px 10px 30px;
 }
 
-@media (max-width:700px){
-  .blogcard .card .card-img-top {
-  border-radius:12px 12px 0 0;
-  width:100%;
-  height: auto;
-}
+@media (max-width: 700px) {
+	.blogcard .card .card-img-top {
+		border-radius: 12px 12px 0 0;
+		width: 100%;
+		height: auto;
+	}
 }
