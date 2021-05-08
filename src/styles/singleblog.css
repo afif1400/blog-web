@@ -50,12 +50,18 @@
 		font-size: 2rem;
 	}
 
-	.singleblog {
+	/* .singleblog {
 		padding: 40px 250px;
+	} */
+}
+
+@media (min-width: 1500px) {
+	.singleblog {
+		padding: 10px 15rem;
 	}
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 700px) {
 	.singleblog {
 		display: flex;
 		flex-direction: column;
