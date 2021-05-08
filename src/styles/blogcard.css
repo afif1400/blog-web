@@ -1,28 +1,44 @@
-.root {
-    max-width: 100%;
-    border-radius: 12px;
+.blogcard{
+  padding:10px 10px 10px 0;
 }
 
-.header1 {
-    padding-top: 50px;
-    padding-left: 50px
+.blogcard .card{
+    border-radius:12px;
 }
 
-.header2 {
-    padding-left: 50px;
+
+
+.blogcard .card .card-img-top {
+  border-radius:12px 12px 0  0;
+  height: 500px;
 }
 
-.title {
-    margin: auto;
-    padding-top: 7px;
+.blogcard .card .card-body .card-title{
+  color: #203656;
+  font-size: 1.8rem;
+  font-weight:normal
 }
 
-.media {
-    height: 0;
-    padding-top: 56.25%;
+.blogcard .card .card-body .card-text{
+   color:#8F9BAD;
 }
 
-.avatar {
-    background-color: red;
-    
+.blogcard .card .card-footer{
+  background-color:#fff;
+  border:none;
+  border-radius:12px;
+  padding-top:30px;
+  padding-left:30px
+}
+
+.blogcard .card .card-body{
+  padding: 30px 30px 10px 30px;
+}
+
+@media (max-width:700px){
+  .blogcard .card .card-img-top {
+  border-radius:12px;
+  width:100%;
+  height: auto;
+}
 }

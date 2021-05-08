@@ -1,21 +1,20 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import RightSideBar from '../components/Sidebar/RightSideBar';
-// import Blog from '../components/Blog/Blog';
+import Blog from '../components/Blog/Blog';
 import '../styles/home.css';
 import PopularPost from '../components/Sidebar/PopularPost';
 import Explore from '../components/Sidebar/Explore';
 import Newsletter from '../components/Sidebar/Newsletter';
 import Underline from '../assets/images/components/underline';
-import BlogCard from '../components/Blog/Blogcard';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='Home'>
       <Hero />
       <div className='blog'>
         <div className='blog_card'>
-          <BlogCard />
+          <Blog />
         </div>
         <div className='right_side_bar'>
           <div className='popular_post'>

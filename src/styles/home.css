@@ -1,3 +1,8 @@
+.Home {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 .blog_card {
   padding: 20px;
   color: #203656;
@@ -23,10 +28,10 @@
   text-align: center;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .blog {
     display: grid;
-    grid-template-columns: 3.1fr 0.9fr;
+    grid-template-columns: 3fr 1fr;
   }
 }
 
