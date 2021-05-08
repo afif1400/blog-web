@@ -7,7 +7,6 @@ import PopularPost from '../components/Sidebar/PopularPost';
 import Explore from '../components/Sidebar/Explore';
 import Newsletter from '../components/Sidebar/Newsletter';
 import Underline from '../assets/images/components/underline';
-import BlogCard from '../components/Blog/Blogcard';
 
 const HomePage = () => {
   return (
@@ -15,10 +14,7 @@ const HomePage = () => {
       <Hero />
       <div className='blog'>
         <div className='blog_card'>
-<<<<<<< HEAD
           <Blog />
-=======
-          <BlogCard />
         </div>
         <div className='right_side_bar'>
           <div className='popular_post'>
@@ -38,7 +34,6 @@ const HomePage = () => {
             <Underline />
             <Newsletter />
           </div>
->>>>>>> b3a5e919273d1b8b386547169df04958cdd8e5b4
         </div>
         <RightSideBar />
       </div>
