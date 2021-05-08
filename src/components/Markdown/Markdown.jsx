@@ -7,7 +7,7 @@ import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import sanityClient from '../../client';
 
 const Markdown = () => {
-	const [blog, setBlog] = useState(null);
+	const [blog, setBlog] = useState('');
 
 	const { slug } = useParams();
 
@@ -29,11 +29,11 @@ const Markdown = () => {
 			"authorImage": author->image
 		}`
 			)
-			.then((data) => setBlog(data[0]))
+			.then((data) => {
+				setBlog(data[0]);
+			})
 			.catch(console.error);
 	}, [slug]);
-
-	const mark = blog ? blog.body[0].children[0].text : '';
 
 	const components = {
 		code({ node, inline, className, children, ...props }) {
@@ -87,13 +87,15 @@ const Markdown = () => {
 
 	return (
 		<div>
-			<ReactMarkdown
-				rehypePlugins={[rehypeKatex]}
-				components={components}
-				children={mark}
-				escapeHtml={false}
-				renderers={{ image: ImageRenderer }}
-			></ReactMarkdown>
+			{blog && (
+				<ReactMarkdown
+					rehypePlugins={[rehypeKatex]}
+					components={components}
+					children={blog.body[0].children[0].text}
+					escapeHtml={false}
+					renderers={{ image: ImageRenderer }}
+				></ReactMarkdown>
+			)}
 		</div>
 	);
 };
