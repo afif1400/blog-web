@@ -21,9 +21,15 @@
 	margin-right: 10px !important;
 }
 
+/* this is for markdown */
 .singleblog .blog_card div p img {
 	width: 100%;
 	height: auto;
+}
+
+.singleblog .blog_card div p {
+	font-size: 18px;
+	margin: 20px 0 40px 0;
 }
 
 @media (min-width: 700px) {
@@ -45,6 +51,13 @@
 	}
 
 	.singleblog {
-		padding: 40px;
+		padding: 40px 250px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.singleblog {
+		display: flex;
+		flex-direction: column;
 	}
 }

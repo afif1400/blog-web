@@ -15,7 +15,7 @@ const BlogCard = ({ mainImage, slug, title, abstract }) => {
 						alt={mainImage.alt}
 					/>
 				</Link>
-				<Card.ImgOverlay>
+				{/* <Card.ImgOverlay style={{ zIndex: '0' }}>
 					<Chip
 						label='category'
 						color='primary'
@@ -23,7 +23,7 @@ const BlogCard = ({ mainImage, slug, title, abstract }) => {
 							background: 'linear-gradient(270deg, #FFA387 0%, #FE4F70 100%)',
 						}}
 					></Chip>
-				</Card.ImgOverlay>
+				</Card.ImgOverlay> */}
 				<Card.Header>
 					<Avatar
 						style={{ marginRight: '10px' }}
