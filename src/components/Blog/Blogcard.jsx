@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
-import { Avatar, Chip } from '@material-ui/core';
+import { Avatar } from '@material-ui/core';
 import '../../styles/blogcard.css';
 
 const BlogCard = ({ mainImage, slug, title, abstract }) => {
