@@ -6,7 +6,17 @@
     border-radius:12px;
 }
 
-
+.blogcard .card .card-header{
+  font-size: 15px;
+  color: #8F9BAD;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:#fff;
+  border:none;
+  padding: 30px 30px 10px 30px;
+}
 
 .blogcard .card .card-img-top {
   border-radius:12px 12px 0  0;
@@ -32,12 +42,12 @@
 }
 
 .blogcard .card .card-body{
-  padding: 30px 30px 10px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 @media (max-width:700px){
   .blogcard .card .card-img-top {
-  border-radius:12px;
+  border-radius:12px 12px 0 0;
   width:100%;
   height: auto;
 }
