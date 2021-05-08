@@ -8,11 +8,13 @@ const BlogCard = ({mainImage, slug, title, abstract}) => {
 	return (
 		<div className='blogcard'>
 			<Card>
-				<Card.Img
-					variant='top'
-					src={mainImage.asset.url}
-					alt={mainImage.alt}
-				/>
+				<Link to={"/blogs" + slug.current}>
+					<Card.Img
+						variant='top'
+						src={mainImage.asset.url}
+						alt={mainImage.alt}
+					/>
+				</Link>
 				<Card.Header>
 					<Avatar
 						style={{ marginRight: '10px' }}
@@ -22,18 +24,21 @@ const BlogCard = ({mainImage, slug, title, abstract}) => {
 					Author name
 				</Card.Header>
 				<Card.Body>
-					<Card.Title>
-						{title}
-					</Card.Title>
+					<Link to={"/blogs" + slug.current}>
+						<Card.Title>
+							{title}
+						</Card.Title>
+					</Link>
 					<Card.Text>
 						{abstract}
 					</Card.Text>
 				</Card.Body>
 				<hr style={{width:"80%", margin:"0 auto"}}/>
-				<Card.Footer>
-					<Link>
-					</Link>
-				</Card.Footer>
+				<Link to={"/blogs" + slug.current}>
+					<Card.Footer>
+							Continue Reading
+					</Card.Footer>
+				</Link>
 			</Card>
 		</div>
 	);
