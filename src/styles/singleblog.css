@@ -21,6 +21,11 @@
 	margin-right: 10px !important;
 }
 
+.singleblog .blog_card div p img {
+	width: 100%;
+	height: auto;
+}
+
 @media (min-width: 700px) {
 	.blogpage .card .card-img-top {
 		border: none;
