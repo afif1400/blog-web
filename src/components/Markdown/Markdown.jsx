@@ -52,39 +52,6 @@ const Markdown = () => {
 		},
 	};
 
-	function ImageRenderer(props) {
-		const imageSrc = props.src;
-		const altText = props.alt;
-		return (
-			<figure className='wp-block-image  is-resized'>
-				<img
-					data-loading='lazy'
-					data-orig-file={imageSrc}
-					data-medium-file={imageSrc + '?w=300'}
-					data-large-file={imageSrc + '?w=750'}
-					src={imageSrc}
-					alt={altText}
-					srcSet={
-						imageSrc +
-						'?w=1024 1024w, ' +
-						imageSrc +
-						'?w=705 705w, ' +
-						imageSrc +
-						'?w=150 150w, ' +
-						imageSrc +
-						'?w=300 300w, ' +
-						imageSrc +
-						'?w=768 768w, ' +
-						imageSrc +
-						'?1248w'
-					}
-					sizes='(max-width: 707px) 200vw, 707px'
-				/>
-				<p style={{ textAlign: 'center' }}>{altText}</p>
-			</figure>
-		);
-	}
-
 	return (
 		<div>
 			{blog && (
@@ -93,7 +60,6 @@ const Markdown = () => {
 					components={components}
 					children={blog.body[0].children[0].text}
 					escapeHtml={false}
-					renderers={{ image: ImageRenderer }}
 				></ReactMarkdown>
 			)}
 		</div>
