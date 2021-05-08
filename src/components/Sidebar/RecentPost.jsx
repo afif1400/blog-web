@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const RecentPost = () => {
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
+      <Card>
         <Card.Img
           variant='top'
           src='https://images.all-free-download.com/images/graphicthumb/hd_picture_of_the_beautiful_natural_scenery_03_166249.jpg'

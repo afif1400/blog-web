@@ -5,6 +5,9 @@ const Blog = () => {
   return (
     <div>
       <BlogCard />
+      <BlogCard />
+      <BlogCard />
+      <BlogCard />
     </div>
   );
 };
