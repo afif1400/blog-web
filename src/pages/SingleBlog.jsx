@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import { Avatar, makeStyles } from '@material-ui/core';
 import { Card } from 'react-bootstrap';
 import '../styles/singleblog.css';
 import RightSideBar from '../components/Sidebar/RightSideBar';
+import Markdown from '../components/Markdown/Markdown';
 
 const useStyles = makeStyles((theme) => ({
 	small: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const BlogPage = () => {
 	const classes = useStyles();
 
-	const { slug } = useParams();
+	// const { slug } = useParams();
 	return (
 		<div className='blogpage'>
 			<Card className='bg-dark text-white'>
@@ -41,43 +42,7 @@ const BlogPage = () => {
 			</Card>
 			<div className='blog singleblog'>
 				<div className='blog_card'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-					suscipit consequatur quis excepturi ducimus architecto at voluptates,
-					quisquam exercitationem iure facere porro harum assumenda, sequi
-					laudantium placeat tempore, officia corporis? Soluta, exercitationem
-					voluptas ut eum fugit nisi delectus ratione, mollitia similique quae
-					ab deleniti? Reprehenderit dolor deleniti maiores voluptatibus, dicta
-					animi ipsum. Labore incidunt porro eaque praesentium at voluptas
-					voluptate illum, deserunt nisi possimus hic saepe quam ullam ipsa
-					sequi. Aperiam mollitia autem officia voluptas consequatur quia
-					doloremque ipsum ad eveniet doloribus aliquam optio unde, fuga totam
-					impedit cupiditate non ab enim inventore et nesciunt? Libero animi
-					labore cumque possimus autem suscipit quasi laudantium necessitatibus
-					quisquam doloribus, nihil delectus officia nobis dolores in
-					consequatur eius minima voluptate veniam voluptatem quam facere totam
-					eveniet. Voluptatem voluptate vero sequi libero earum, eos, delectus
-					repudiandae vel, facilis corporis doloremque eius incidunt aut soluta
-					similique ipsa? Recusandae voluptas ipsum reiciendis modi hic totam
-					neque, minima cumque voluptatum, facilis laboriosam earum unde eius
-					odit exercitationem quaerat tempora suscipit. Voluptatem eos numquam
-					consequatur tenetur officiis doloribus dolore eius assumenda
-					reiciendis veritatis fugit impedit cupiditate alias optio sit, dolorem
-					laborum id? Amet deserunt, quae, nihil, facere esse quisquam nam
-					laboriosam optio corrupti nemo dolor iste sunt? Repellat.
-					<br />
-					<br />
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-					praesentium ea sint tempore illum itaque. Hic odio animi quae totam
-					consequatur officiis velit facilis nobis fuga cum assumenda impedit
-					aliquam nemo ducimus quis accusamus, saepe earum facere? Dolorum
-					consectetur unde nemo, totam at, ab laudantium odit quidem ipsa a
-					molestias qui natus architecto reprehenderit, nulla iure officiis
-					voluptatibus corrupti. Nostrum corrupti fugiat dolor culpa architecto,
-					commodi recusandae libero quaerat consequuntur voluptatum non in nihil
-					ipsam molestiae reprehenderit nulla sit facere porro harum laudantium
-					exercitationem provident omnis consequatur. Exercitationem ad,
-					voluptates, accusantium enim officiis excepturi rem rerum at, eaque
-					molestias fuga.
+					<Markdown />
 				</div>
 				<div className='right_side_bar'>
 					<RightSideBar />
