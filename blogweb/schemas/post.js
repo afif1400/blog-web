@@ -10,6 +10,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'abstract',
+      title: 'Abstract',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
