@@ -1,0 +1,45 @@
+.card-img-overlay-single {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+.overlaytext {
+	position: absolute;
+	bottom: 10%;
+}
+
+.overlaytext .card-title {
+	font-size: 1.4rem;
+}
+
+.overlaytext .card-text {
+	display: flex;
+	align-items: center;
+	font-size: 0.8rem;
+}
+
+.overlaytext .card-text .MuiAvatar-root {
+	margin-right: 10px !important;
+}
+
+@media (min-width: 700px) {
+	.blogpage .card .card-img-top {
+		border: none;
+		height: 70vh;
+		object-fit: cover;
+	}
+
+	.overlaytext {
+		position: absolute;
+		right: 10%;
+		left: 10%;
+		bottom: 10%;
+	}
+
+	.overlaytext .card-title {
+		font-size: 2rem;
+	}
+
+	.singleblog {
+		padding: 40px;
+	}
+}

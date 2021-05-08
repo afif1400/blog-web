@@ -1,20 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
-import { Avatar } from '@material-ui/core';
+import { Avatar, Chip } from '@material-ui/core';
 import '../../styles/blogcard.css';
 
-const BlogCard = ({mainImage, slug, title, abstract}) => {
+const BlogCard = ({ mainImage, slug, title, abstract }) => {
 	return (
 		<div className='blogcard'>
 			<Card>
-				<Link to={"/blogs" + slug.current}>
+				<Link to={'/blogs/' + slug.current}>
 					<Card.Img
 						variant='top'
 						src={mainImage.asset.url}
 						alt={mainImage.alt}
 					/>
 				</Link>
+				<Card.ImgOverlay>
+					<Chip
+						label='category'
+						color='primary'
+						style={{
+							background: 'linear-gradient(270deg, #FFA387 0%, #FE4F70 100%)',
+						}}
+					></Chip>
+				</Card.ImgOverlay>
 				<Card.Header>
 					<Avatar
 						style={{ marginRight: '10px' }}
@@ -24,20 +33,14 @@ const BlogCard = ({mainImage, slug, title, abstract}) => {
 					Author name
 				</Card.Header>
 				<Card.Body>
-					<Link to={"/blogs" + slug.current}>
-						<Card.Title>
-							{title}
-						</Card.Title>
+					<Link to={'/blogs/' + slug.current}>
+						<Card.Title>{title}</Card.Title>
 					</Link>
-					<Card.Text>
-						{abstract}
-					</Card.Text>
+					<Card.Text>{abstract}</Card.Text>
 				</Card.Body>
-				<hr style={{width:"80%", margin:"0 auto"}}/>
-				<Link to={"/blogs" + slug.current}>
-					<Card.Footer>
-							Continue Reading
-					</Card.Footer>
+				<hr style={{ width: '80%', margin: '0 auto' }} />
+				<Link to={'/blogs/' + slug.current}>
+					<Card.Footer>Continue Reading</Card.Footer>
 				</Link>
 			</Card>
 		</div>
