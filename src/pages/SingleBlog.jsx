@@ -23,7 +23,7 @@ const BlogPage = () => {
 	// const { slug } = useParams();
 	return (
 		<div className='blogpage'>
-			<Card className='bg-dark text-white'>
+			<Card className='text-white'>
 				<Card.Img
 					variant='top'
 					src='https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
@@ -35,7 +35,10 @@ const BlogPage = () => {
 						</Card.Title>
 						<Card.Text>
 							<Avatar className={classes.small}></Avatar>
-							Author name &ensp; . &ensp;Last updated 3 mins ago
+							<div>
+								Author name &ensp; <p>.</p>
+								&ensp;Last updated 3 mins ago
+							</div>
 						</Card.Text>
 					</div>
 				</Card.ImgOverlay>

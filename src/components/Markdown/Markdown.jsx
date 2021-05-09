@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
 import rehypeKatex from 'rehype-katex';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { Skeleton } from '@material-ui/lab';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import sanityClient from '../../client';
 
@@ -54,7 +55,40 @@ const Markdown = () => {
 
 	return (
 		<div>
-			{blog && (
+			{!blog ? (
+				<div>
+					<div>
+						{<Skeleton variant='h3' />}
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+					</div>
+					<div>
+						{<Skeleton variant='h3' />}
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+					</div>
+					<div>
+						{<Skeleton variant='h3' />}
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+						<Skeleton />
+					</div>
+				</div>
+			) : (
 				<ReactMarkdown
 					rehypePlugins={[rehypeKatex]}
 					components={components}
