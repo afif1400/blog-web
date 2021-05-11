@@ -24,7 +24,12 @@ const Markdown = () => {
 					url
 				}
 			},
-			body,
+			content{
+				asset->{
+					_id,
+					url
+				}
+			},
 			"name": author->name,
 			"authorImage": author->image
 		}`
@@ -33,7 +38,7 @@ const Markdown = () => {
 			.catch(console.error);
 	}, [slug]);
 
-	const mark = blog ? blog.body[0].children[0].text : '';
+	const mark = blog ? blog.content.asset.url : null;
 
 	const components = {
 		code({ node, inline, className, children, ...props }) {
