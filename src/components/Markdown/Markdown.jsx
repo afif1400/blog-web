@@ -97,7 +97,7 @@ const Markdown = () => {
 				<ReactMarkdown
 					rehypePlugins={[rehypeKatex]}
 					components={components}
-					children={blog.body[0].children[0].text}
+					children={""}
 					escapeHtml={false}
 				></ReactMarkdown>
 			)}
