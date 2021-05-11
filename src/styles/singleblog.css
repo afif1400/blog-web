@@ -1,4 +1,5 @@
 .card-img-overlay-single {
+	border: none;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 }
 
@@ -17,13 +18,37 @@
 	font-size: 0.8rem;
 }
 
+.overlaytext .card-text div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlaytext .card-text div p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 5px 10px 5px;
+}
+
 .overlaytext .card-text .MuiAvatar-root {
 	margin-right: 10px !important;
 }
 
+/* this is for markdown */
 .singleblog .blog_card div p img {
 	width: 100%;
 	height: auto;
+}
+
+.singleblog .blog_card div {
+	font-size: 18px;
+	margin: 20px 0 40px 0;
+}
+
+.blogpage .card .card-img-top {
+	min-height: 30vh;
 }
 
 @media (min-width: 700px) {
@@ -44,7 +69,20 @@
 		font-size: 2rem;
 	}
 
+	/* .singleblog {
+		padding: 40px 250px;
+	} */
+}
+
+@media (min-width: 1500px) {
 	.singleblog {
-		padding: 40px;
+		padding: 10px 15rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.singleblog {
+		display: flex;
+		flex-direction: column;
 	}
 }
